@@ -1,0 +1,59 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+.canvas-container {
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  padding: 20px;
+  margin: auto;
+}
+
+canvas {
+  display: block;
+  border-radius: 4px;
+  margin-inline: auto;
+  border: 2px solid red;
+}
+
+#tooltip {
+  display: block;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.88);
+  color: white;
+  border-radius: 4px;
+  font-size: 13px;
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  transform: scale(0.85);
+  transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px 4px;
+}
+
+#tooltip .tooltip-header {
+  padding: 8px 4px;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+}
+
+#tooltip .tooltip-body {
+  padding: 5px 10px;
+}
+
+#tooltip .tooltip-body .tooltip-item {
+  display: flex;
+  align-items: baseline;
+  gap: 6px 4px;
+  padding: 5px 0;
+}

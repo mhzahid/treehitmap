@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+    <title>Finviz-Style Canvas Treemap (Industry Highlight)</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- <button id="resetZoom" style="position:fixed;top:15px;right:15px;z-index:1002;padding:10px 16px;">Reset
+        Zoom</button> -->
+
+    <div class="canvas-container" style="display: flex;">
+        <div
+            style="width: 350px; background-color: tomato; display: flex; place-content: center; place-items: center; display: none;">
+            <h2>Side NavBar</h2>
+        </div>
+        <div class="canvas-wrapper">
+            <canvas id="canvas" width="1200" height="800" style="width: 100%;"></canvas>
+        </div>
+        <div id="tooltip" style="visibility:hidden;"></div>
+    </div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.7.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.7.1"></script>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
